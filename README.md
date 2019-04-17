@@ -21,7 +21,8 @@ address this problem.
 
 This repository contains the source code for implementing our DISCO framework, which is published in ... Anyone using this source code, please cite our work using the bibtex as follows...
 
-======================================================================================
+===============================================================================
+
 The following instruction describes how to use the code.
 
 ## Build and Installation
