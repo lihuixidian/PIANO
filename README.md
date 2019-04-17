@@ -20,3 +20,68 @@ graph embedding and deep reinforcement learning techniques to
 address this problem.
 
 This repository contains the source code for implementing our DISCO framework, which is published in ... Anyone using this source code, please cite our work using the bibtex as follows...
+
+======================================================================================
+The following instruction describes how to use the code.
+
+## Build and Installation
+
+Get the source code, and install all the dependencies. 
+
+### 1. build the graphnn library
+- Download and install [CUDA]( https://developer.nvidia.com/cuda-toolkit).
+
+- Download and install [Intel MKL](https://software.intel.com/en-us/mkl). Add the tool box's to your system path.
+
+  ```
+  {path_to_your_intel_root/name_of_parallel_tool_box}/bin/psxevars.sh
+  ```
+
+- Build static library
+
+  ```
+  cd graphnn/
+  cp make_common.example make_common
+  # modify configurations in make_common file
+  make
+  ```
+
+- Build the IM-DQN library:
+
+  ```
+   cd code/IM_DQN/IMlib/
+      cp Makefile.example Makefile
+      make
+  ```
+
+  **Now you are all set with the C++ backend.** 
+
+
+## Training
+
+### 1. Generate training data
+
+Take the DBLP dataset as example, we generated different training data using different sampling algorithms. The training dataset should be stored in `DISCO-KDD/code/data`. If you want to test other data set, you should put the data in the same path.
+
+### 2. Training with n-step Q-learning
+
+Change the parameters int the `IM-train.sh`, and then run the training script. 
+
+```
+cd DISCO-KDD/code/IM_DQN
+sh IM-train.sh
+```
+
+### 3. Test the performance
+
+To run the test, using the `IM-test.sh`, you can change the parameters in the script, make sure the parameters are **same** as those in `IM-train.sh`.
+
+```
+cd DISCO-KDD/code/IM_DQN
+./IM-test.sh
+```
+
+After that, DISCO will gives the solution, as the node selection sequence. And the influence of the nodes selected can be determined by `evaluate.py`. `evaluate.py` in the `DISCO-KDD/code/data`.
+
+## LICENSE
+This DISCO framework is partly based on the [graph_comb_opt](https://github.com/Hanjun-Dai/graph_comb_opt) with MIT license.
