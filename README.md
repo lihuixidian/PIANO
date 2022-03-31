@@ -1,5 +1,5 @@
-# DISCO
-DISCO: Influence Maximization Meets Graph Embedding and Deep Learning
+# DISCO (or PIANO)
+DISCO (or PIANO): Influence Maximization Meets Graph Embedding and Deep Learning
 
 Since its introduction in 2003, the influence maximization (im) problem
 has drawn significant research attention in the literature. The
