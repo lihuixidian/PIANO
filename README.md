@@ -1,5 +1,5 @@
-# DISCO (or PIANO)
-DISCO (or PIANO): Influence Maximization Meets Graph Embedding and Deep Learning
+# PIANO (or DISCO)
+PIANO (or DISCO): Influence Maximization Meets Graph Embedding and Deep Learning
 
 Since its introduction in 2003, the influence maximization (im) problem
 has drawn significant research attention in the literature. The
@@ -19,8 +19,22 @@ we present a novel framework called disco that incorporates
 graph embedding and deep reinforcement learning techniques to
 address this problem.
 
-This repository contains the source code for implementing our DISCO framework, which is published in ... Anyone using this source code, please cite our work using the bibtex as follows...
+This repository contains the source code for implementing our PIANO framework, which is published in IEEE Transactions on Computational Social Systems. Anyone using this source code, please cite our work using the bibtex as follows...
 
+  @article{piano_tcss_lh,
+    author    = {Hui Li and
+                 Mengting Xu and
+                 Sourav S Bhowmick and
+                 Joty Shafiq Rayhan and 
+                 Changsheng Sun and 
+                 Jiangtao Cui},
+    title     = {PIANO: Influence Maximization Meets Deep Reinforcement Learning},
+    journal   = {{IEEE} Trans. Comput. Soc. Syst.},
+    volume    = {},
+    number    = {},
+    pages     = {},
+    year      = {2022},
+  }
 ===============================================================================
 
 The following instruction describes how to use the code.
@@ -82,7 +96,7 @@ cd DISCO-KDD/code/IM_DQN
 ./IM-test.sh
 ```
 
-After that, DISCO will gives the solution, as the node selection sequence. And the influence of the nodes selected can be determined by `evaluate.py`. `evaluate.py` in the `DISCO-KDD/code/data`.
+After that, PIANO will gives the solution, as the node selection sequence. And the influence of the nodes selected can be determined by `evaluate.py`. `evaluate.py` in the `DISCO-KDD/code/data`.
 
 ## LICENSE
-This DISCO framework is partly based on the [graph_comb_opt](https://github.com/Hanjun-Dai/graph_comb_opt) with MIT license.
+This PIANO framework is partly based on the [graph_comb_opt](https://github.com/Hanjun-Dai/graph_comb_opt) with MIT license.
