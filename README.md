@@ -21,7 +21,8 @@ address this problem.
 
 This repository contains the source code for implementing our PIANO framework, which is published in IEEE Transactions on Computational Social Systems. Anyone using this source code, please cite our work using the bibtex as follows...
 
-```@article{piano_tcss_lh,
+```
+@article{piano_tcss_lh,
     author    = {Hui Li and
                  Mengting Xu and
                  Sourav S Bhowmick and
